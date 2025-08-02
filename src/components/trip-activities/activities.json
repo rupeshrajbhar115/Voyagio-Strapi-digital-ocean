@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_trip_activities_activities",
+  "info": {
+    "displayName": "Activities"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "activitiesPlan": {
+      "displayName": "Activities Plan",
+      "type": "component",
+      "repeatable": true,
+      "component": "activities-plan.activities-plan"
+    }
+  }
+}

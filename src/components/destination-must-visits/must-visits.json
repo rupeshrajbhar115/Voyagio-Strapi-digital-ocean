@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_destination_must_visits_must_visits",
+  "info": {
+    "displayName": "mustVisits"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "allMustVisits": {
+      "displayName": "AllMustVisits",
+      "type": "component",
+      "repeatable": true,
+      "component": "all-must-visits.all-must-visits"
+    }
+  }
+}

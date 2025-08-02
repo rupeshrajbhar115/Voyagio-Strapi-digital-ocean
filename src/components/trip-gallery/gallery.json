@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_trip_gallery_galleries",
+  "info": {
+    "displayName": "Gallery"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "imageGallery": {
+      "displayName": "imageGallery",
+      "type": "component",
+      "repeatable": true,
+      "component": "image-gallery.image-gallery"
+    }
+  }
+}

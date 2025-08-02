@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_destination_year_year_unfolds",
+  "info": {
+    "displayName": "Year Unfold",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "yearUnfoldComp": {
+      "displayName": "yearUnfoldComp",
+      "type": "component",
+      "repeatable": true,
+      "component": "year-unfold-comp.year-unfold-comp"
+    }
+  }
+}

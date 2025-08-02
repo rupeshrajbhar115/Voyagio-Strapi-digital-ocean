@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_home_travellers_travellers",
+  "info": {
+    "displayName": "Travellers",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "highlights": {
+      "displayName": "Highlights",
+      "type": "component",
+      "repeatable": true,
+      "component": "highlights.highlights"
+    }
+  }
+}

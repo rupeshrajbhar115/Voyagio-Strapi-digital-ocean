@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "where_categories",
+  "info": {
+    "singularName": "where-category",
+    "pluralName": "where-categories",
+    "displayName": "Where Category"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "categoryName": {
+      "type": "string"
+    },
+    "categoryImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "trips": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::trip.trip",
+      "mappedBy": "where_categories"
+    }
+  }
+}

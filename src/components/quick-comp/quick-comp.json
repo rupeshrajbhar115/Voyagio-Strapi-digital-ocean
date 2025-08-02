@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_quick_comp_quick_comps",
+  "info": {
+    "displayName": "quickComp"
+  },
+  "options": {},
+  "attributes": {
+    "desc": {
+      "type": "text"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

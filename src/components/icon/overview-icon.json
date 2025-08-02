@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_icon_overview_icons",
+  "info": {
+    "displayName": "overviewIcon"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "iconImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

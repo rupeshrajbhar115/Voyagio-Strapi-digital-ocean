@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_year_unfold_comp_year_unfold_comps",
+  "info": {
+    "displayName": "yearUnfoldComp"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "text"
+    },
+    "date": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

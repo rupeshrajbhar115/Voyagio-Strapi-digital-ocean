@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_trip_price_prices",
+  "info": {
+    "displayName": "Price"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "string"
+    },
+    "priceIcon": {
+      "displayName": "priceIcon",
+      "type": "component",
+      "repeatable": true,
+      "component": "price-icon.price-icon"
+    }
+  }
+}

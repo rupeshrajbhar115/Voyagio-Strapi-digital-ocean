@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_trip_day_to_day_day_to_days",
+  "info": {
+    "displayName": "DayToDay",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "reserveMySpot": {
+      "type": "string"
+    },
+    "dayPlan": {
+      "displayName": "dayPlan",
+      "type": "component",
+      "repeatable": true,
+      "component": "day-plan.day-plan"
+    },
+    "dayInfo": {
+      "displayName": "dayInfo",
+      "type": "component",
+      "repeatable": true,
+      "component": "day-info.day-info"
+    }
+  }
+}

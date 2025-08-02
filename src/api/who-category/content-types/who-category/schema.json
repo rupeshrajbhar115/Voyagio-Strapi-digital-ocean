@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "who_categories",
+  "info": {
+    "singularName": "who-category",
+    "pluralName": "who-categories",
+    "displayName": "Who Category",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "categoryName": {
+      "type": "string"
+    },
+    "categoryImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "trips": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::trip.trip",
+      "mappedBy": "who_categories"
+    }
+  }
+}

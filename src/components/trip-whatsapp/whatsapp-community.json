@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_trip_whatsapp_whatsapp_communities",
+  "info": {
+    "displayName": "WhatsappCommunity",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "string"
+    },
+    "whatsappLink": {
+      "type": "string"
+    },
+    "lottie": {
+      "type": "json"
+    },
+    "lottieJson": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

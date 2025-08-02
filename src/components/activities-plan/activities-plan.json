@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_activities_plan_activities_plans",
+  "info": {
+    "displayName": "Activities Plan"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

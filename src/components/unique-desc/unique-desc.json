@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_unique_desc_unique_descs",
+  "info": {
+    "displayName": "uniqueDesc",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "text"
+    },
+    "iconImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

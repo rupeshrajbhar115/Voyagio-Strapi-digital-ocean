@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_feels_like_feels_likes",
+  "info": {
+    "displayName": "feelsLike"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

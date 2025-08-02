@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_trip_overview_overviews",
+  "info": {
+    "displayName": "Overview",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "text"
+    },
+    "subTitle": {
+      "type": "string"
+    },
+    "overviewIcon": {
+      "displayName": "overviewIcon",
+      "type": "component",
+      "repeatable": true,
+      "component": "icon.overview-icon"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_home_personality_personalities",
+  "info": {
+    "displayName": "personality"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "brandPer": {
+      "displayName": "brandPer",
+      "type": "component",
+      "repeatable": true,
+      "component": "brand-per.brand-per"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_destination_community_communities",
+  "info": {
+    "displayName": "community"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "text"
+    },
+    "link": {
+      "type": "text"
+    }
+  }
+}

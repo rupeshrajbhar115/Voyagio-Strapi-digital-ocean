@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "homes",
+  "info": {
+    "singularName": "home",
+    "pluralName": "homes",
+    "displayName": "Home",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "banner": {
+      "displayName": "Home",
+      "type": "component",
+      "repeatable": false,
+      "component": "home-banner.home"
+    },
+    "curatedTrips": {
+      "displayName": "CuratedTrips",
+      "type": "component",
+      "repeatable": false,
+      "component": "home-curated.curated-trips"
+    },
+    "travellers": {
+      "displayName": "Travellers",
+      "type": "component",
+      "repeatable": false,
+      "component": "home-travellers.travellers"
+    },
+    "whatsappCom": {
+      "type": "component",
+      "repeatable": false,
+      "component": "trip-whatsapp.whatsapp-community"
+    },
+    "personality": {
+      "displayName": "personality",
+      "type": "component",
+      "repeatable": false,
+      "component": "home-personality.personality"
+    },
+    "trips": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::trip.trip"
+    }
+  }
+}

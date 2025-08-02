@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_destination_unique_unique_destinations",
+  "info": {
+    "displayName": "uniqueDestination"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "uniqueDesc": {
+      "displayName": "uniqueDesc",
+      "type": "component",
+      "repeatable": true,
+      "component": "unique-desc.unique-desc"
+    }
+  }
+}

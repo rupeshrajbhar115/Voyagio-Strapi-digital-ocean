@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_trip_place_totally_places",
+  "info": {
+    "displayName": "TotallyPlace"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "place": {
+      "displayName": "place",
+      "type": "component",
+      "repeatable": true,
+      "component": "place.place"
+    }
+  }
+}

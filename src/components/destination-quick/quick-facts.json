@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_destination_quick_quick_facts",
+  "info": {
+    "displayName": "quickFacts"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "quickComp": {
+      "displayName": "quickComp",
+      "type": "component",
+      "repeatable": true,
+      "component": "quick-comp.quick-comp"
+    }
+  }
+}

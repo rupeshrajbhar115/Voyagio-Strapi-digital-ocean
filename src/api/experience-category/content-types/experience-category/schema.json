@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "experience_categories",
+  "info": {
+    "singularName": "experience-category",
+    "pluralName": "experience-categories",
+    "displayName": "Experience Category"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "categoryName": {
+      "type": "string"
+    },
+    "categoryImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "trips": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::trip.trip",
+      "mappedBy": "experience_categories"
+    }
+  }
+}

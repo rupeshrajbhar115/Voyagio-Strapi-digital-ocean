@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_travellers_reviews_travellers_reviews",
+  "info": {
+    "displayName": "travellersReviews"
+  },
+  "options": {},
+  "attributes": {
+    "star": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "text"
+    },
+    "name": {
+      "type": "string"
+    },
+    "designation": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

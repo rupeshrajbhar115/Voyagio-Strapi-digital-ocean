@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_home_curated_curated_trips",
+  "info": {
+    "displayName": "CuratedTrips"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "curated": {
+      "displayName": "curated",
+      "type": "component",
+      "repeatable": true,
+      "component": "curated.curated"
+    }
+  }
+}

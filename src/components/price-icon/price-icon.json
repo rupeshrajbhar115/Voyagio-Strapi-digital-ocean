@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_price_icon_price_icons",
+  "info": {
+    "displayName": "priceIcon"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

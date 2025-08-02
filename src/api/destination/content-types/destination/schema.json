@@ -1,0 +1,104 @@
+{
+  "kind": "collectionType",
+  "collectionName": "destinations",
+  "info": {
+    "singularName": "destination",
+    "pluralName": "destinations",
+    "displayName": "Destination",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "countries": {
+      "type": "string"
+    },
+    "isNew": {
+      "type": "boolean"
+    },
+    "countriesDesc": {
+      "type": "text"
+    },
+    "countriesImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "banner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "destination-banner.banner"
+    },
+    "overview": {
+      "type": "component",
+      "repeatable": false,
+      "component": "destination-overview.overview"
+    },
+    "mustVisits": {
+      "type": "component",
+      "repeatable": false,
+      "component": "destination-must-visits.must-visits"
+    },
+    "yearUnfold": {
+      "type": "component",
+      "repeatable": false,
+      "component": "destination-year.year-unfold"
+    },
+    "uniqueDestination": {
+      "type": "component",
+      "repeatable": false,
+      "component": "destination-unique.unique-destination"
+    },
+    "feels": {
+      "type": "component",
+      "repeatable": false,
+      "component": "destination-feels.feels"
+    },
+    "quickFacts": {
+      "type": "component",
+      "repeatable": false,
+      "component": "destination-quick.quick-facts"
+    },
+    "community": {
+      "type": "component",
+      "repeatable": false,
+      "component": "destination-community.community"
+    },
+    "WhatsappCom": {
+      "type": "component",
+      "repeatable": false,
+      "component": "trip-whatsapp.whatsapp-community"
+    },
+    "FaqDestination": {
+      "type": "component",
+      "repeatable": false,
+      "component": "trip-faq.faq"
+    },
+    "destination_categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::destination-category.destination-category",
+      "inversedBy": "destinations"
+    },
+    "trips": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::trip.trip",
+      "mappedBy": "destinations"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "countries"
+    },
+    "levelType": {
+      "type": "string"
+    }
+  }
+}

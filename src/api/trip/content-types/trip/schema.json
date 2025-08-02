@@ -1,0 +1,150 @@
+{
+  "kind": "collectionType",
+  "collectionName": "trips",
+  "info": {
+    "singularName": "trip",
+    "pluralName": "trips",
+    "displayName": "Trips",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "menuTitle": {
+      "type": "string"
+    },
+    "subTitle": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string"
+    },
+    "days": {
+      "type": "string"
+    },
+    "totalTravelers": {
+      "type": "string"
+    },
+    "tripType": {
+      "type": "string"
+    },
+    "totalPrice": {
+      "type": "string"
+    },
+    "reserveMySpot": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "countryCode": {
+      "type": "string"
+    },
+    "isNew": {
+      "type": "boolean"
+    },
+    "banner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "trip-banner.banner"
+    },
+    "overview": {
+      "type": "component",
+      "repeatable": false,
+      "component": "trip-overview.overview"
+    },
+    "activities": {
+      "type": "component",
+      "repeatable": false,
+      "component": "trip-activities.activities"
+    },
+    "dayToDay": {
+      "type": "component",
+      "repeatable": false,
+      "component": "trip-day-to-day.day-to-day"
+    },
+    "imageGallery": {
+      "type": "component",
+      "repeatable": false,
+      "component": "trip-gallery.gallery"
+    },
+    "price": {
+      "type": "component",
+      "repeatable": false,
+      "component": "trip-price.price"
+    },
+    "totallyPlace": {
+      "type": "component",
+      "repeatable": false,
+      "component": "trip-place.totally-place"
+    },
+    "reviews": {
+      "type": "component",
+      "repeatable": false,
+      "component": "trip-reviews.reviews"
+    },
+    "whatsapp": {
+      "type": "component",
+      "repeatable": false,
+      "component": "trip-whatsapp.whatsapp-community"
+    },
+    "faq": {
+      "type": "component",
+      "repeatable": false,
+      "component": "trip-faq.faq"
+    },
+    "who_categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::who-category.who-category",
+      "inversedBy": "trips"
+    },
+    "experience_categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::experience-category.experience-category",
+      "inversedBy": "trips"
+    },
+    "where_categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::where-category.where-category",
+      "inversedBy": "trips"
+    },
+    "destinations": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::destination.destination",
+      "inversedBy": "trips"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "month": {
+      "type": "string"
+    },
+    "trips": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::trip.trip"
+    },
+    "levelType": {
+      "type": "string"
+    },
+    "tripTypeIcon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

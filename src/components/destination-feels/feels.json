@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_destination_feels_feels",
+  "info": {
+    "displayName": "Feels"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "feelsLike": {
+      "displayName": "feelsLike",
+      "type": "component",
+      "repeatable": true,
+      "component": "feels-like.feels-like"
+    }
+  }
+}

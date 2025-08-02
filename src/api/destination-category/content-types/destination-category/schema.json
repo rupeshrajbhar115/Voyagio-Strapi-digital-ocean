@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "destination_categories",
+  "info": {
+    "singularName": "destination-category",
+    "pluralName": "destination-categories",
+    "displayName": "Destination Category",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "categoryName": {
+      "type": "string"
+    },
+    "destinations": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::destination.destination",
+      "mappedBy": "destination_categories"
+    }
+  }
+}
