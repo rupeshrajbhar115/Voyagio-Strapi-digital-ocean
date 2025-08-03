@@ -39,12 +39,11 @@ module.exports = ({ env }) => ({
       providerOptions: {
         accessKeyId: env("DO_SPACE_ACCESS_KEY"),
         secretAccessKey: env("DO_SPACE_SECRET_KEY"),
-        endpoint: env("DO_SPACE_ENDPOINT"), // correct endpoint
+        endpoint: `https://${env("DO_SPACE_REGION")}.digitaloceanspaces.com`,
         region: env("DO_SPACE_REGION"),
         params: {
           Bucket: env("DO_SPACE_BUCKET"),
         },
-        baseUrl: `${env("DO_SPACE_ENDPOINT")}/${env("DO_SPACE_BUCKET")}`, // <-- Add this
       },
     },
   },
