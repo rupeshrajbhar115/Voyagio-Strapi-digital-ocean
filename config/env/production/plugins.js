@@ -38,10 +38,13 @@ module.exports = ({ env }) => ({
     config: {
       provider: "@strapi/provider-upload-aws-s3",
       providerOptions: {
-        accessKeyId: env("DO_SPACE_ACCESS_KEY"),
-        secretAccessKey: env("DO_SPACE_SECRET_KEY"),
-        endpoint: env("DO_SPACE_ENDPOINT"),
-        region: env("DO_SPACE_REGION"),
+        s3Options: {
+          accessKeyId: env("DO_SPACE_ACCESS_KEY"),
+          secretAccessKey: env("DO_SPACE_SECRET_KEY"),
+          endpoint: env("DO_SPACE_ENDPOINT"), // e.g. https://sfo3.digitaloceanspaces.com
+          region: env("DO_SPACE_REGION"), // e.g. sfo3
+          forcePathStyle: false,
+        },
         params: {
           Bucket: env("DO_SPACE_BUCKET"),
         },
