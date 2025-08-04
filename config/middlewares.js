@@ -1,14 +1,24 @@
 module.exports = [
   "strapi::errors",
+  "strapi::security",
   {
-    name: "strapi::cors",
+    name: "strapi::security",
     config: {
-      origin: ["*"],
-      methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
-      headers: "*",
+      contentSecurityPolicy: {
+        useDefaults: true,
+        directives: {
+          "img-src": [
+            "'self'",
+            "data:",
+            "blob:",
+            "https://market-assets.strapi.io",
+            "https://voyagio-imagestore1.sfo3.digitaloceanspaces.com",
+          ],
+        },
+      },
     },
   },
-  "strapi::security",
+  "strapi::cors",
   "strapi::poweredBy",
   "strapi::logger",
   "strapi::query",
