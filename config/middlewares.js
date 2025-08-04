@@ -36,13 +36,7 @@ module.exports = [
       contentSecurityPolicy: {
         useDefaults: true,
         directives: {
-          "img-src": [
-            "'self'",
-            "data:",
-            "blob:",
-            "https://market-assets.strapi.io",
-            "https://voyagio-imagestore1.sfo3.digitaloceanspaces.com",
-          ],
+          "img-src": ["'self'", "data:", "blob:", "your-space-url"],
         },
       },
     },
@@ -55,8 +49,4 @@ module.exports = [
   "strapi::session",
   "strapi::favicon",
   "strapi::public",
-  {
-    name: "proxy-images",
-    path: "./src/middlewares/proxy-images.js",
-  },
 ];
