@@ -56,3 +56,28 @@ module.exports = ({ env }) => {
     },
   };
 };
+
+// path: config/plugins.js
+// module.exports = ({ env }) => ({
+//   upload: {
+//     config: {
+//       provider: '@strapi/provider-upload-aws-s3',
+//       providerOptions: {
+//         s3Options: {
+//           credentials: {
+//             accessKeyId: env('DO_SPACE_ACCESS_KEY'),
+//             secretAccessKey: env('DO_SPACE_SECRET_KEY'),
+//           },
+//           region: env('DO_SPACE_REGION'),
+//           endpoint: env('DO_SPACE_ENDPOINT'), // https://sfo3.digitaloceanspaces.com
+//           forcePathStyle: false,
+//           params: {
+//             Bucket: env('DO_SPACE_BUCKET'),
+//           },
+//         },
+//         baseUrl: env('PROXY_BASE_URL'), // This will be your droplet URL
+//         baseUrlAppendPath: true,
+//       },
+//     },
+//   },
+// });
