@@ -33,31 +33,51 @@
 // });
 
 // config/plugins.js
-module.exports = ({ env }) => {
-  // ✅ DEBUG: Check if .env values are being loaded
-  console.log("ACCESS KEY:", env("DO_SPACE_ACCESS_KEY"));
-  console.log("SECRET KEY:", env("DO_SPACE_SECRET_KEY"));
-  console.log("ENDPOINT:", env("DO_SPACE_ENDPOINT"));
+// module.exports = ({ env }) => {
+//   return {
+//     upload: {
+//       config: {
+//         provider: "@strapi/provider-upload-aws-s3",
+//         providerOptions: {
+//           s3Options: {
+//             credentials: {
+//               accessKeyId: env("DO_SPACE_ACCESS_KEY"),
+//               secretAccessKey: env("DO_SPACE_SECRET_KEY"),
+//             },
+//             region: env("DO_SPACE_REGION"),
+//             endpoint: env("DO_SPACE_ENDPOINT"),
+//             forcePathStyle: false,
+//             params: {
+//               Bucket: env("DO_SPACE_BUCKET"),
+//             },
+//           },
+//         },
+//       },
+//     },
+//   };
+// };
 
-  return {
-    upload: {
-      config: {
-        provider: "@strapi/provider-upload-aws-s3",
-        providerOptions: {
-          s3Options: {
-            credentials: {
-              accessKeyId: env("DO_SPACE_ACCESS_KEY"),
-              secretAccessKey: env("DO_SPACE_SECRET_KEY"),
-            },
-            region: env("DO_SPACE_REGION"),
-            endpoint: env("DO_SPACE_ENDPOINT"),
-            forcePathStyle: false,
-            params: {
-              Bucket: env("DO_SPACE_BUCKET"),
-            },
+// path: config/plugins.js
+module.exports = ({ env }) => ({
+  upload: {
+    config: {
+      provider: "@strapi/provider-upload-aws-s3",
+      providerOptions: {
+        s3Options: {
+          credentials: {
+            accessKeyId: env("DO_SPACE_ACCESS_KEY"),
+            secretAccessKey: env("DO_SPACE_SECRET_KEY"),
+          },
+          region: env("DO_SPACE_REGION"),
+          endpoint: env("DO_SPACE_ENDPOINT"), // https://sfo3.digitaloceanspaces.com
+          forcePathStyle: false,
+          params: {
+            Bucket: env("DO_SPACE_BUCKET"),
           },
         },
+        baseUrl: env("PROXY_BASE_URL"), // This will be your droplet URL
+        baseUrlAppendPath: true,
       },
     },
-  };
-};
+  },
+});
